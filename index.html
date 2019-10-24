@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2048</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body id="bodyElement">
+    <div id="header">
+        2048
+    </div>
+    <div id="score">
+        通关有惊喜哦~加油！！！
+    </div>
+    <div id="contaniner">
+        <div id="col1" class="col"></div>
+        <div id="col2" class="col"></div>
+        <div id="col3" class="col"></div>
+        <div id="col4" class="col"></div>
+        <div id="col5" class="col"></div>
+        <div id="col6" class="col"></div>
+        <div id="col7" class="col"></div>
+        <div id="col8" class="col"></div>
+        <div id="col9" class="col"></div>
+    </div>
+    <div id="new" onclick="newGame()">New Game</div>
+    <script>
+        (function () {
+            var styleNode = document.createElement('style');
+            var w = document.documentElement.clientWidth / 16;
+            styleNode.innerHTML = "html{font-size:" + w + "px!important}";
+            document.head.appendChild(styleNode);
+        })()
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
